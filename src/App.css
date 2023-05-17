@@ -1,38 +1,714 @@
-.App {
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* nav component start */
+
+.nav_container {
+
+  display: flex;
+  height: 70px;
+  position: absolute;
+  width: 100%;
+  background-color:coral;
+}
+
+/* start style start */
+
+.nav_container_start{
+  width: 20%;
+  color: black;
+
+}
+
+.logos {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 10px;
+  
+}
+.logo {
+  display: inline;
+  font-size: 20px;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  padding-top: 1px;
+}
+.logo1{
+  background-color: blue;
+  z-index: 5;
+
+}
+.logo2{
+  background-color: rgb(250, 5, 217);
+  
+  z-index: 4;
+
+}
+.logo3{
+  background-color: violet;
+  z-index: 3;
+
+}
+.logo4{
+  background-color: rgb(206, 224, 2);
+  z-index: 2;
+
+}
+.logo5{
+  background-color: darkturquoise;
+  z-index: 1;
+
+}
+
+.com_name {
+  margin-left: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+/* start style end */
+
+
+
+/* middle style start */
+
+.nav_container_middle{
+  width: 80%;
+}
+
+.nav_container_middle_ul {
+  list-style-type: none;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.link, .lnk {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px orangered;
+  
+  
+}
+.link:hover, .lnk:hover{
+  color: aqua;
+  text-shadow: 2px 2px 2px blueviolet;
+}
+
+
+.service_comp {
+  padding: 10px;
+  position: absolute;
+  display: none;
+  z-index: 3;
+  background-color: #fc2803;
+  border-radius: 20px;
+}
+
+.lnk {
+  margin: 5px;
+  display: block;
+}
+.parenthover:hover .service_comp {
+  display: block;
+}
+
+
+
+/* middle style end */
+
+
+.nav_container_end{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 30%;
+  color: white;
+  padding-top: 15px;
+  padding-left: 50px;
+  align-items: center;
+
+}
+/* nav bar end */
+
+
+/* home page start */
+
+.home_container {
+  position: relative;
+}
+.img{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+/* quote */
+
+.quote {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 50%;
+  text-align: center;
+  text-align: left;
+}
+.quote_h{
+  color: black;
+ margin-left: 50px;
+}
+.quote_p{
+  color: black;
+  font-weight: bolder;
+  width: 70%;
+  margin-left: 30px;
+  text-shadow: 1px 1px 2px red;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.btn-success {
+  border-radius: 10px;
+  margin-left: 150px;
+}
+.btn-success:hover{
+  box-shadow: 3px 3px 5px red;
+}
+
+/* home page end */
+
+
+/* footer component start */
+
+.footer_container {
+  display: flex;
+  background-color: black;
+  padding: 10px;
+
+}
+
+.footer1, .footer2, .footer3{
+  flex: 33.3%;
+  color: white;
+  font-size: larger;
+}
+.footer2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer_head {
+  color: red;
+  text-transform: capitalize;
+}
+.footer_Link {
+  text-decoration: none;
+}
+.footer_Link:hover {
+color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* footer3 */
+
+.footer3_h1 {
+  color: red;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* footer component end */
+
+
+/* galary start */
+
+.card {
+  display: inline-block;
+  margin: 15px;
+  
+}
+.galary_img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid orangered;
+  border-radius: 10px;
+  
+}
+
+
+/* create account  */
+
+.form_handle, .form_handles {
+  background-color: dodgerblue;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+
+.form_child, .form_child_login {
+  width: 40%;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px  red;
+  background-image: url("https://img.freepik.com/premium-photo/magical-fairytale-red-dragons-with-fire-flying-out-your-mouth_124507-31301.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form_child:hover {
+  box-shadow: 3px 3px 5px  black;
+}
+.form_child_h, .form_login_h {
+  text-align: center;
+  text-transform: capitalize;
+  color: red;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_child_form {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.inp, .inpp {
+  display: block;
+  width: 80%;
+  height: 40px;
+
+  border-radius: 10px;
+  padding-left: 3px;
+
+}
+.inp:hover {
+  box-shadow:2px 2px 5px greenyellow;
+}
+
+.btn-primary{
+  width: 30%;
+  margin-left: 90px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 5px  black;
+}
+.btn-primary:hover {
+  box-shadow: 2px 2px 5px lime;
+}
+
+/* login form component */
+
+
+.form_login_h {
+  color: rgb(55, 0, 255);
+}
+
+.form_child_login {
+  background-image: url("https://cdn.wallpapersafari.com/25/66/xscOlB.jpg");
+  background-size: cover;
+  
+}
+
+.inpp:hover, .active {
+  box-shadow:2px 2px 5px red;
+} 
+
+.form_child_login:hover {
+  box-shadow: 2px 2px 5px lime;
+}
+.form_handles {
+  background-color: aquamarine;
+}
+
+
+/* contact */
+
+.contact {
+  background-image: url("https://w.forfun.com/fetch/0b/0bc739968eeb709d8eebbdb132141cb8.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 300px;
+  margin: 30px auto 50px auto;
+  padding: 10px;
+  border-radius: 50px;
+}
+.contact_h {
+  color: lime;
+  margin-left: 250px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px black;
+}
+.contact_hr {
+  width: 30%;
+  line-height: 50px;
+  color: red;
+  margin-left: 250px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.contact_p {
   color: white;
+  font-weight: bolder;
+  width: 50%;
+  margin-left: 250px;
+  font-size: larger;
+  text-shadow: 1px 1px 3px black;
 }
 
-.App-link {
-  color: #61dafb;
+.restaurant_contact_box {
+  background: url("https://cdn.cbeditz.com/cbeditz/large/11645787233blsv7gnxvwxa7f3lmmvl83q8fbzodnadsfnwybxgbdvwwkcejv3exbzwflhuw8kjkbmtjq9z9rozhwdjynoyvvrywnh03ju4jdvp.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.restaurant_contact_orange, .restaurant_contact_black {
+  width: 35%;
+  height: 350px;
+  background-color: #fc2803;
+  padding: 50px ;
+  border-radius: 30px;
+  float: left;
+  margin: 0px 90px 0px 20px;
+  color: wheat;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.restaurant_contact_orange:hover {
+  box-shadow: 1px 1px 2px 3px #fc2803;
+}
+
+.restaurant_contact_black {
+  box-shadow: 1px 1px 2px 3px black;
+}
+.restaurant_contact_address,.restaurant_contact_call, .restaurant_contact_email {
+  position: relative;
+  height: 65px;
+  margin-bottom: 10px;
+}
+.symbol {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+}
+
+.qw, .qw2, .qw3, .cal, .cal2, .em, .em2 {
+  position: absolute;
+  left: 60px;
+}
+.qw {
+  top: 3px;
+
+}
+.qw2 {
+  top: 25px;
+  color: lime;
+  font-weight: bolder;
+}
+.qw3 {
+  top: 45px;
+}
+.cal, .em {
+  top: 9px;
+}
+.cal2, .em2 {
+  top: 35px;
+}
+
+.black {
+  background-color: black;
+}
+.black :hover {
+  box-shadow: 1px 1px 2px 3px #fc2803;
+}
+.timing, .timings {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-family:cursive;
+  margin-bottom: 7px;
+}
+.timing {
+  color: lime;
+  text-align: center;
+  text-shadow: 1px 1px 2px red;
+}
+.timings {
+  font-size: large;
+}
+
+.touch {
+  margin-top: 30px;
+  font-weight: bolder;
+}
+.touch h1 {
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 3px red;
+}
+.touch_pa {
+  width:60%;
+  margin:10px auto;
+  text-align: center;
+  text-transform: capitalize;
+  color:blue;
+  text-shadow: 2px 2px 3px black;
+  font-weight: bolder;
+  font-size: 20px;
+  
+}
+
+.forms {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+}
+.input_name, .input_email, .input_messaga {
+  width: 60%;
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.input_name:hover {
+  box-shadow: 1px 1px 3px 2px black;
+}
+.input_email:hover {
+  box-shadow: 1px 1px 3px 2px black;
+}
+.input_messaga:hover {
+  box-shadow: 1px 1px 3px 3px black;
+}
+.input_messaga {
+  height: 70px;
+  font-size: 17px;
+}
+.input_submit {
+  background-color: lime;
+  padding: 7px 20px;
+  border-radius: 7px 20px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  cursor: pointer;
+  text-align: center;
+}
+.input_submit:hover {
+  box-shadow: 1px 1px 2px 2px black;
+}
+
+
+/* user data component */
+
+.card1 {
+  position: relative;
+  border: 2px solid black;
+}
+.trash {
+  position: absolute;
+  right: -15px;
+  top: -9px;
+  background-color: red;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+/* about component page */
+
+.about_h1 {
+  text-align: center;
+  text-shadow: 2px 2px 3px red;
+  font-weight: bolder; 
+  margin-top: 30px;
+}
+
+.about_p1, .about_p2{
+  width: 80%;
+  margin: 5px auto 10px auto;
+  font-weight: bolder;
+}
+
+.about_imgg {
+  width: 250px;
+  height: 250px;
+  margin-left: 70%;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 3px 1px black;
+}
+
+.bbt {
+  border-radius: 10px;
+  display: block;
+  width: 300px;
+  margin: 0px auto 20px auto;
+}
+
+.icon {
+  width: 20%;
+}
+.icon:hover{
+  text-shadow: 2px 2px 5px red;
+}
+
+/* services web applications */
+
+.ser_web_img1 {
+  width: 95%;
+  height: 400px;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+}
+
+.ser_web_h {
+  color: red;
+  background-color: bisque;
+}
+
+.cardbor {
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px blue;
+}
+.cardbor:hover{
+  box-shadow: 1px 1px 2px 2px black;
+}
+
+.check {
+  color: black;
+}
+
+.cardtext {
+  font-weight: bolder;
+}
+
+/* mobile application */
+
+.llink {
+  text-decoration: none;
+  color: aqua;
+  width: 70%;
+  height: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px 0px 15px 0px;
+  font-weight: bolder;
+}
+
+/* digital application */
+
+.digicontainer {
+  display: flex;
+}
+.digicontent{
+  width: 65%;
+  padding: 20px;
+  font-weight: bolder;
+}
+.digicontent h3,.pp{
+  color: red;
+}
+
+.digiimg {
+  width: 35%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.digiimg img {
+  width: 80%;
+
+}
+.digiimg1 {
+  margin: 50px 0px 100px 0px ;
+}
+
+/* price component */
+
+
+.card:hover {
+  box-shadow: 2px 2px 3px 3px crimson;
+}
+.pricehead {
+  background-color: red;
+  text-align: center;
+  font-weight: bolder;
+}
+.pricehead1{
+  background-color:coral;
+  text-align: center;
+  font-weight: bolder;
+}
+.priceli {
+  background-color: coral;
+  font-weight: bolder;
+}
+.pricelink {
+  text-decoration:"none"; 
+  font-weight:"bolder";
+  border-radius:"20px"
+}
+.pricelink:hover {
+  box-shadow: 2px 2px 3px 3px red;
+}
+
+.pricei{
+  margin-right: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  color:crimson;
+}
+
+/* error conponent */
+.error_container {
+  background-image: url("https://hiraniconfigmgr.com/PostImages/201.jpeg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.error_content h1 {
+  font-size: 15rem;
+  background-clip: text;
+  color: transparent;
+  background-image: url("https://img.freepik.com/free-photo/space-background-realistic-starry-night-cosmos-shining-stars-milky-way-stardust-color-galaxy_1258-154643.jpg");
+  margin-top: 0px;
+}
+.error_content p {
+  color: red;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 2px 2px 3px  black;
+}
+
+/* hosting component */
+
+.host_img{
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+}
+
